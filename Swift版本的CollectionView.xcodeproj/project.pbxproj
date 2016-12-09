@@ -12,9 +12,17 @@
 		301D591D1DF7C8570034C9DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301D591B1DF7C8570034C9DF /* Main.storyboard */; };
 		301D591F1DF7C8570034C9DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301D591E1DF7C8570034C9DF /* Assets.xcassets */; };
 		301D59221DF7C8570034C9DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301D59201DF7C8570034C9DF /* LaunchScreen.storyboard */; };
+		301D592A1DF7C88F0034C9DF /* DDCollectionFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301D59291DF7C88F0034C9DF /* DDCollectionFlowLayout.swift */; };
+		301D592D1DF7C8B10034C9DF /* DDCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301D592B1DF7C8B10034C9DF /* DDCollectionCell.swift */; };
+		301D592E1DF7C8B10034C9DF /* DDCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 301D592C1DF7C8B10034C9DF /* DDCollectionCell.xib */; };
+		301D59301DF7C8C40034C9DF /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301D592F1DF7C8C40034C9DF /* ShopModel.swift */; };
+		301D59641DF807430034C9DF /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 301D59631DF807430034C9DF /* 1.plist */; };
+		301D59661DF80AD10034C9DF /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 301D59651DF80AD10034C9DF /* loading.png */; };
+		7CA19A033EA163739C23E186 /* Pods_Swift___CollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5435291FDB5726EF1230EE6 /* Pods_Swift___CollectionView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13623867AE2EF05B29695C25 /* Pods-Swift版本的CollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift版本的CollectionView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swift版本的CollectionView/Pods-Swift版本的CollectionView.debug.xcconfig"; sourceTree = "<group>"; };
 		301D59141DF7C8570034C9DF /* Swift版本的CollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift版本的CollectionView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		301D59171DF7C8570034C9DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		301D59191DF7C8570034C9DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,14 @@
 		301D591E1DF7C8570034C9DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		301D59211DF7C8570034C9DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		301D59231DF7C8570034C9DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		301D59291DF7C88F0034C9DF /* DDCollectionFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDCollectionFlowLayout.swift; sourceTree = "<group>"; };
+		301D592B1DF7C8B10034C9DF /* DDCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDCollectionCell.swift; sourceTree = "<group>"; };
+		301D592C1DF7C8B10034C9DF /* DDCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DDCollectionCell.xib; sourceTree = "<group>"; };
+		301D592F1DF7C8C40034C9DF /* ShopModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
+		301D59631DF807430034C9DF /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		301D59651DF80AD10034C9DF /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
+		B7E75ABE52F7A046E7ED8FEA /* Pods-Swift版本的CollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift版本的CollectionView.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift版本的CollectionView/Pods-Swift版本的CollectionView.release.xcconfig"; sourceTree = "<group>"; };
+		E5435291FDB5726EF1230EE6 /* Pods_Swift___CollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Swift___CollectionView.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CA19A033EA163739C23E186 /* Pods_Swift___CollectionView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +57,8 @@
 			children = (
 				301D59161DF7C8570034C9DF /* Swift版本的CollectionView */,
 				301D59151DF7C8570034C9DF /* Products */,
+				37FC397B9E16635AC16DCCE3 /* Pods */,
+				943979EB05F3D300CADD189E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +73,45 @@
 		301D59161DF7C8570034C9DF /* Swift版本的CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				301D59171DF7C8570034C9DF /* AppDelegate.swift */,
+				301D59671DF818D30034C9DF /* other */,
 				301D59191DF7C8570034C9DF /* ViewController.swift */,
-				301D591B1DF7C8570034C9DF /* Main.storyboard */,
-				301D591E1DF7C8570034C9DF /* Assets.xcassets */,
-				301D59201DF7C8570034C9DF /* LaunchScreen.storyboard */,
-				301D59231DF7C8570034C9DF /* Info.plist */,
+				301D59291DF7C88F0034C9DF /* DDCollectionFlowLayout.swift */,
+				301D592B1DF7C8B10034C9DF /* DDCollectionCell.swift */,
+				301D592C1DF7C8B10034C9DF /* DDCollectionCell.xib */,
+				301D592F1DF7C8C40034C9DF /* ShopModel.swift */,
 			);
 			path = "Swift版本的CollectionView";
+			sourceTree = "<group>";
+		};
+		301D59671DF818D30034C9DF /* other */ = {
+			isa = PBXGroup;
+			children = (
+				301D59231DF7C8570034C9DF /* Info.plist */,
+				301D591E1DF7C8570034C9DF /* Assets.xcassets */,
+				301D59201DF7C8570034C9DF /* LaunchScreen.storyboard */,
+				301D591B1DF7C8570034C9DF /* Main.storyboard */,
+				301D59651DF80AD10034C9DF /* loading.png */,
+				301D59631DF807430034C9DF /* 1.plist */,
+				301D59171DF7C8570034C9DF /* AppDelegate.swift */,
+			);
+			name = other;
+			sourceTree = "<group>";
+		};
+		37FC397B9E16635AC16DCCE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13623867AE2EF05B29695C25 /* Pods-Swift版本的CollectionView.debug.xcconfig */,
+				B7E75ABE52F7A046E7ED8FEA /* Pods-Swift版本的CollectionView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		943979EB05F3D300CADD189E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5435291FDB5726EF1230EE6 /* Pods_Swift___CollectionView.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +121,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 301D59261DF7C8570034C9DF /* Build configuration list for PBXNativeTarget "Swift版本的CollectionView" */;
 			buildPhases = (
+				B5C87A328DC62BE45534A5D4 /* [CP] Check Pods Manifest.lock */,
 				301D59101DF7C8570034C9DF /* Sources */,
 				301D59111DF7C8570034C9DF /* Frameworks */,
 				301D59121DF7C8570034C9DF /* Resources */,
+				E096903492B8655E76D47A6F /* [CP] Embed Pods Frameworks */,
+				20B77E08D6E69CC4BE390995 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,7 +177,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				301D59661DF80AD10034C9DF /* loading.png in Resources */,
+				301D59641DF807430034C9DF /* 1.plist in Resources */,
 				301D59221DF7C8570034C9DF /* LaunchScreen.storyboard in Resources */,
+				301D592E1DF7C8B10034C9DF /* DDCollectionCell.xib in Resources */,
 				301D591F1DF7C8570034C9DF /* Assets.xcassets in Resources */,
 				301D591D1DF7C8570034C9DF /* Main.storyboard in Resources */,
 			);
@@ -132,12 +188,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20B77E08D6E69CC4BE390995 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swift版本的CollectionView/Pods-Swift版本的CollectionView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5C87A328DC62BE45534A5D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E096903492B8655E76D47A6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swift版本的CollectionView/Pods-Swift版本的CollectionView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		301D59101DF7C8570034C9DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				301D592A1DF7C88F0034C9DF /* DDCollectionFlowLayout.swift in Sources */,
+				301D592D1DF7C8B10034C9DF /* DDCollectionCell.swift in Sources */,
 				301D591A1DF7C8570034C9DF /* ViewController.swift in Sources */,
+				301D59301DF7C8C40034C9DF /* ShopModel.swift in Sources */,
 				301D59181DF7C8570034C9DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +364,7 @@
 		};
 		301D59271DF7C8570034C9DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13623867AE2EF05B29695C25 /* Pods-Swift版本的CollectionView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CSPDBDZ5FD;
@@ -270,6 +378,7 @@
 		};
 		301D59281DF7C8570034C9DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7E75ABE52F7A046E7ED8FEA /* Pods-Swift版本的CollectionView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CSPDBDZ5FD;
@@ -300,6 +409,7 @@
 				301D59281DF7C8570034C9DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
