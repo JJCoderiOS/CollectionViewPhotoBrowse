@@ -13,8 +13,10 @@ let ID : String = "DDCollectionCell"
 
 class ViewController: UIViewController,UICollectionViewDelegate {
 
-    fileprivate var collectionView:UICollectionView!
+    open var collectionView:UICollectionView!
     fileprivate var shops:[ShopModel] = [ShopModel]()
+    fileprivate lazy var modalDelegate: ModalAnimationDelegate = ModalAnimationDelegate()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +63,19 @@ extension ViewController : UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return self.shops.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        collectionView.selectItem(at: indexPath, animated: true, scrollPosition: UICollectionViewScrollPosition.bottom)
+    
+            let photoVC = PhotoBrowseCollectionVC()
+            photoVC.indexPaht = indexPath
+            photoVC.items = self.shops
+            photoVC.transitioningDelegate = modalDelegate
+            photoVC.modalPresentationStyle = .custom
+            present(photoVC, animated: true, completion: nil)
+        
     }
     
 }

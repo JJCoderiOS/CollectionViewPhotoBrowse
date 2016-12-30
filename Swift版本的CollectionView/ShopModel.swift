@@ -15,6 +15,9 @@ class ShopModel : NSObject {
     open var img : String!
     open var price : String!
     
+    var showBigImage : Bool = false;
+
+    
     override init() {
 
         super.init()
