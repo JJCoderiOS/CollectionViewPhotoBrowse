@@ -1,0 +1,6 @@
+framework module Pods_Swift___CollectionView {
+  umbrella header "Pods-Swift版本的CollectionView-umbrella.h"
+
+  export *
+  module * { export * }
+}
