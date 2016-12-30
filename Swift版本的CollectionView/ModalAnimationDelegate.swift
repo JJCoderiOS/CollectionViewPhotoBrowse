@@ -13,6 +13,7 @@ class ModalAnimationDelegate: NSObject, UIViewControllerTransitioningDelegate{
 }
 
 extension ModalAnimationDelegate: UIViewControllerAnimatedTransitioning {
+    // MARK:- 刚刚开始present时候调用
      func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         isPresentAnimationing = true
         return self
@@ -25,12 +26,16 @@ extension ModalAnimationDelegate: UIViewControllerAnimatedTransitioning {
 }
 
 extension ModalAnimationDelegate {
+    // MARK:- 动画执行时长
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 1
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+        
+        //判断是弹出还是消失
         isPresentAnimationing ? presentViewAnimation(transitionContext) : dismissViewAnimation(transitionContext)
+        
     }
     
     func presentViewAnimation(_ transitionContext: UIViewControllerContextTransitioning) {
@@ -42,8 +47,6 @@ extension ModalAnimationDelegate {
         guard let _ = destinationView else {
             return
         }
-//        print(destinationView)
-//        print(containerView)
         // 过渡view添加到容器view上
         containerView.addSubview(destinationView!)
         // 目标控制器

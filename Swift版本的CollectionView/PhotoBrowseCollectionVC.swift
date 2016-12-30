@@ -39,6 +39,8 @@ extension PhotoBrowseCollectionVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        collectionView?.backgroundColor = UIColor.lightGray
+        
         collectionView?.frame = UIScreen.main.bounds
         collectionView?.frame.size.width = UIScreen.main.bounds.size.width + cellMargin
         
@@ -62,7 +64,6 @@ extension PhotoBrowseCollectionVC {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! CollectionViewCell
-        
         let item = items![indexPath.item]
         item.showBigImage = true
         cell.item = item
